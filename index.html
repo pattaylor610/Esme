@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esme: The Thoughtful Gifter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'forest-dark': '#3A5A40',    // Deep, slightly desaturated green
+            'forest-mid': '#588157',     // A clearer, medium green
+            'forest-light': '#A3B18A',   // A muted, light sage/olive
+            'earth-brown': '#A0522D',    // Sienna - a reddish-brown for warmth
+            'earth-tan': '#DAD2BC',      // A very light, warm tan/beige
+            'accent-amber': '#FFBF00',   // Amber/Gold for CTAs
+            'neutral-bg': '#F0F0F0',     // A light, clean gray for body
+            'main-bg': '#FCFCFC',        // Almost white for main content areas
+            'text-heading': '#2F3E46',   // Dark, cool gray for headings
+            'text-body': '#354F52',      // Dark teal/gray for body text
+            'text-muted': '#84A98C',     // A soft green for muted text
+            // Keep functional colors like red for errors/warnings
+            'error-red': '#DC2626',
+            'error-red-light': '#FECACA',
+          }
+        }
+      }
+    }
+  </script>
+  {/* The importmap has been removed from here */}
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.4.0",
+    "react-swipeable": "https://esm.sh/react-swipeable@^7.0.2",
+    "vite": "https://esm.sh/vite@^6.3.5",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^4.5.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-neutral-bg">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

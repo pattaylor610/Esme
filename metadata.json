@@ -1,0 +1,6 @@
+{
+  "name": "Esme: The Thoughtful Gifter",
+  "description": "Esme is a smart, user-friendly gift recommendation tool that uses Gemini AI to generate personalised gift suggestions based on a few key details about the recipient.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
